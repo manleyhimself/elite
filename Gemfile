@@ -44,6 +44,15 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+  gem 'thin'
+  gem 'autoscaler'
+  gem 'newrelic_rpm'
+  gem 'unicorn'
+end
+
 group :test, :development do
   gem "rspec-rails"
   gem "capybara"
