@@ -1,6 +1,10 @@
 Elite::Application.routes.draw do
   root 'application#index'
 
+  resources "elite-pool", :controller => :elite_pool, :as => :elite_pool
+  resources "elite-turf", :controller => :elite_turf, :as => :elite_turf
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

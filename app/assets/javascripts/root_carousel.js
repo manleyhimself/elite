@@ -7,7 +7,9 @@ $(document).ready(function(){
     // initBindCustomBtns('.fa-chevron-circle-right', '.slick-next');
   }
 
-  init();
+  if(isCurrentPathName('/elite-pool') || isCurrentPathName('/elite-turf')){
+    init();
+  }
 
 });
 

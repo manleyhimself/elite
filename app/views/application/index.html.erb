@@ -1,28 +1,10 @@
-<div class="Home__container">
-  <div class="home-carousel">
-    <!-- TODO implement slick lazy loading once actual images are in place!!!! otherwise you'll be loading -->
-    <!-- multiple very large images at once -->
-    <div>
-      <%= image_tag 'pool.jpg' %>
-    </div>
-    <div>
-      <%= image_tag 'pool1.jpg' %>
-    </div>
-    <div>
-      <%= image_tag 'pool2.jpg' %>
-    </div>
-  </div>
+<div class="Left__home_ctn Home__ctn">
+  <span class="Left__home_btn"> <%= link_to 'ELITE POOL', elite_pool_index_path %> </span>
+</div>
 
-  <div class="Home__nav_bar_left">
-    <span> ELITE POOLS </span>
-  </div>
-  <div class="Home__nav_bar_right">
-    <ul>
-      <li> ELITE SERVICES </li>
-      <li> PORTFOLIO </li>
-      <li> BUILD </li>
-      <li> RENOVATE </li>
-      <li> AUGMENT </li>
-    </ul>
-  </div>
+<div class="Left__overlay Home__overlay" data-toggle-class="Right__overlay" data-new-opacity="0.8" data-link="span.Left__home_btn a"></div>
+<div class="Right__overlay wtf Home__overlay" data-toggle-class="Left__overlay" data-new-opacity="0.6" data-link="span.Right__home_btn a"></div>
+
+<div class="Right__home_ctn Home__ctn">
+  <span class="Right__home_btn"> <%= link_to 'ELITE TURF', elite_turf_index_path %> </span>
 </div>

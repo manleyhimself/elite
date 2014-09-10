@@ -1,0 +1,57 @@
+.Home__ctn, .Home__overlay {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+}
+
+.Home__overlay{
+  opacity: 0;
+  background: black;
+  z-index: 1;
+}
+
+.Home__overlay:hover{
+  cursor: pointer;
+}
+
+.Left__overlay{
+  left: 0;
+}
+
+.Right__overlay{
+  left: 50%;
+}
+
+.Home__ctn a{
+  text-decoration: none;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 100px;
+}
+
+.Home__ctn span{
+  position: absolute;
+  height: 112px;
+  width: 584px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.Right__home_ctn {
+  right: 0;
+}
+
+.Left__home_ctn {
+  left: 0;
+  background: #191970;
+}
+
+.Left__home_ctn a{
+  color: white;
+}
+
+.Right__home_ctn a{
+  color: #191970;
+}
