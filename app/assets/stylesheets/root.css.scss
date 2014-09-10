@@ -8,6 +8,9 @@
   opacity: 0;
   background: black;
   z-index: 1;
+  transition: opacity .35s ease-in-out;
+  -moz-transition: opacity .35s ease-in-out;
+  -webkit-transition: opacity .35s ease-in-out;
 }
 
 .Home__overlay:hover{
@@ -16,6 +19,14 @@
 
 .Left__overlay{
   left: 0;
+}
+
+.Left__overlay:hover{
+  opacity: 0.6;
+}
+
+.Right__overlay:hover{
+  opacity: 0.8;
 }
 
 .Right__overlay{
@@ -31,12 +42,19 @@
 .Home__ctn span{
   position: absolute;
   height: 112px;
-  width: 584px;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+.Left__home_btn{
+  width: 655px;
+}
+
+.Right__home_btn{
+  width: 584px;
 }
 
 .Right__home_ctn {
