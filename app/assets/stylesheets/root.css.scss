@@ -1,11 +1,20 @@
+.Home__parent{
+  position: relative;
+  min-width: 1000px;
+  height: 100%;
+}
+
 .Home__ctn, .Home__overlay {
   position: absolute;
   height: 100%;
   width: 50%;
+  min-width: 500px;
+  min-height: 718px;
+  overflow: hidden;
 }
 
 .Home__overlay{
-  opacity: 0;
+  opacity: 0.7;
   background: black;
   z-index: 1;
   transition: opacity .35s ease-in-out;
@@ -13,20 +22,40 @@
   -webkit-transition: opacity .35s ease-in-out;
 }
 
+.Home__overlay img{
+  height: 100%;
+  width: 100%;
+  min-width: 752px;
+}
+
+.Home__ctn img{
+  z-index: 999999;
+  position: absolute;
+  background: rgba(255,255,255,0.4);
+}
+
+.Left__home_ctn:hover + .Left__overlay{ 
+  opacity: 1;
+}
+
+.Right__home_ctn:hover + .Right__overlay{ 
+  opacity: 1;
+}
+
 .Home__overlay:hover{
   cursor: pointer;
 }
 
 .Left__overlay{
-  left: 0;
+  right: 50%;
 }
 
 .Left__overlay:hover{
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .Right__overlay:hover{
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .Right__overlay{
@@ -41,12 +70,13 @@
 
 .Home__ctn span{
   position: absolute;
-  height: 112px;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   margin: auto;
+  height: 400px;
+  width: 380px;
 }
 
 .Left__home_btn{
@@ -63,7 +93,6 @@
 
 .Left__home_ctn {
   left: 0;
-  background: #191970;
 }
 
 .Left__home_ctn a{
