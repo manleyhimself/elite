@@ -7,7 +7,7 @@ $(document).ready(function(){
     // initBindCustomBtns('.fa-chevron-circle-right', '.slick-next');
   }
 
-  if(isCurrentPathName('/elite-pool') || isCurrentPathName('/elite-turf')){
+  if(isCurrentPathName('/elite-pool') || isCurrentPathName('/elite-turf') || isCurrentPathName('/alternate_version')){
     init();
   }
 

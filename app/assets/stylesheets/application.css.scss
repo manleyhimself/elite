@@ -12,6 +12,8 @@
  *= require_tree .
  */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 html{
   height: 100%;
@@ -20,6 +22,7 @@ html{
 body{
   margin: 0;
   height: 100%;
+  overflow: hidden;
 }
 
 
